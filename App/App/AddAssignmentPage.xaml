@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.AddAssignmentPage">
+
+    <NavigationPage.TitleView>
+        <Label Text="Add Assignment" TextColor="AntiqueWhite" FontSize="30"/>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Assignment Name" PlaceholderColor="Black" x:Name="AssignmentName"/>
+            <Label Text="Due Date:" FontSize="17" TextColor="Black" />
+            <DatePicker x:Name="AssignmentDueDatePicker"/>
+            <Button BackgroundColor="LightGreen" Text="Save" FontSize="20" Clicked="SaveAssignment_Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

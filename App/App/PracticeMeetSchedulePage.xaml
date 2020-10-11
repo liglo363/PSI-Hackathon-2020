@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.PracticeMeetSchedulePage">
+    
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10">
+            <Label Text="Practice/Meet Schedule" FontSize="30" TextColor="AntiqueWhite" VerticalTextAlignment="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source = "https://dx1slceezt1vd.cloudfront.net/attachments/dbb808b5a60d6b2fc1c64b8eefe0f5fbde5c4379/store/limit/1800/1800/2c38331f15233577c178b0a21a1dbf7f25f6a6283cb60da223b69fb0d2db/July.jpg" Aspect="Fill"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

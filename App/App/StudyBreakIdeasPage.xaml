@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.StudyBreakIdeasPage">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10">
+            <Image Source="https://cdn4.iconfinder.com/data/icons/furniture-198/64/12_sofa_couch_furniture_interior_home_decoration-512.png"  HeightRequest="30" WidthRequest="30"/>
+            <Label Text="Study Break Ideas" FontSize="30" TextColor="AntiqueWhite" VerticalTextAlignment="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="   - Walk your dog" FontSize="20" TextColor="Magenta"/>
+            <Label Text="   - Watch your favorite tv show" FontSize="20" TextColor="Magenta"/>
+            <Label Text="   - Read a good book" FontSize="20" TextColor="Magenta"/>
+            <Label Text="   - Have a snack" FontSize="20" TextColor="Magenta"/>
+            <Label Text="   - Go outside and get some fresh air" FontSize="20" TextColor="Magenta"/>
+            <Label Text="   - Talk with friends and family" FontSize="20" TextColor="Magenta"/>
+            <Image Source = "https://i.enkiquotes.com/iEOC9bcBDlF6rjSqAq_N07_vwwY=/400x0//images/2016/11/aa6e23168b495aa597662eaa7d4ea12e.jpg" HeightRequest="300"/>
+            <Label Text="Background Music - Dancing Queen By: ABBA" FontSize="20" TextColor="Magenta"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

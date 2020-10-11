@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.MainPage">
+
+    <NavigationPage.TitleView>
+    <Label Text="Dashboard" TextColor="AntiqueWhite" FontSize="35"/>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            <Button Text="Classes" BackgroundColor="LightGreen" FontSize="25" Clicked="Classes_Button_Clicked"/>
+            <Button Text="AP Exams" BackgroundColor ="LightBlue" FontSize="25" Clicked="APExams_Button_Clicked"/>
+            <Button Text="SAT/ACT" BackgroundColor="Aquamarine" FontSize="25" Clicked="SATACT_Button_Clicked"/>
+            <Button Text="Extracurriculars" BackgroundColor="Orange" FontSize="25" Clicked="EC_Button_Clicked"/>
+            <Button Text="Mental Health Resources" BackgroundColor="Pink" FontSize="25" Clicked="Mental_Health_Resources_Button_Clicked"/>
+            <Image Source="https://img.picturequotes.com/1/137/life-is-like-riding-a-bicycle-to-keep-your-balance-you-must-keep-moving-quote-4.jpg"
+               HeightRequest="300" />
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+

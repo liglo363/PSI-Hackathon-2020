@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.ZoomMeetingsPage">
+    
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10">
+            <Image Source="https://cdn3.iconfinder.com/data/icons/male-user/100/30-1User-11-512.png" HeightRequest="35" WidthRequest="35"/>
+            <Label Text="Zoom Meetings" FontSize="30" TextColor="AntiqueWhite" VerticalTextAlignment="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="   - Period 1 Link" FontSize="30" TextColor="Green" VerticalTextAlignment="Center" />
+            <Label Text="   - Period 2 Link" FontSize="30" TextColor="Green" VerticalTextAlignment="Center" />
+            <Label Text="   - Period 3 Link" FontSize="30" TextColor="Green" VerticalTextAlignment="Center" />
+            <Label Text="   - Period 4 Link" FontSize="30" TextColor="Green" VerticalTextAlignment="Center" />
+            <Label Text="   - Period 5 Link" FontSize="30" TextColor="Green" VerticalTextAlignment="Center" />
+            <Label Text="   - Period 6 Link" FontSize="30" TextColor="Green" VerticalTextAlignment="Center" />
+            <Label Text="   - Period 7 Link" FontSize="30" TextColor="Green" VerticalTextAlignment="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

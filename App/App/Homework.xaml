@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.Homework">
+
+    <!--<NavigationPage.TitleView>
+        <Label Text="Homework" TextColor="AntiqueWhite" FontSize="35"/>
+    </NavigationPage.TitleView>-->
+    
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10">
+            <Image Source="https://static.thenounproject.com/png/1520826-200.png"  HeightRequest="30" WidthRequest="30"/>
+            <Label Text="Homework" FontSize="30" TextColor="AntiqueWhite" VerticalTextAlignment="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            <Button BackgroundColor="LightGreen" Text="Add Assignment" FontSize="20" Clicked="Add_Assignment_Button_Clicked"/>
+            <ListView x:Name="AssignmentView"
+            ItemsSource="{Binding Assignments}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding Name, StringFormat='Name : {0}'}" TextColor="Green" FontSize="15"/>
+                                <Label Text="{Binding DueDate, StringFormat='Due Date : {0:D}'}" TextColor="DeepPink" FontSize="15"/>
+                               
+                                <!--<CheckBox 
+                        IsChecked="{Binding Completed}" 
+                        CheckedChanged="CheckBox_CheckedChanged" 
+                        HorizontalOptions="EndAndExpand"/>-->
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <!--<Label Text="Assignment 1" FontSize="20" TextColor="Green"/>
+            <CheckBox CheckedChanged="CheckBox_CheckedChanged"/>
+            <Label Text="Assignment 2" FontSize="20" TextColor="Green"/>
+            <CheckBox CheckedChanged="CheckBox_CheckedChanged"/>
+            <Label Text="Assignment 3" FontSize="20" TextColor="Green"/>
+            <CheckBox CheckedChanged="CheckBox_CheckedChanged"/>
+
+            <Label Text="Good Job!" FontSize="20" TextColor="Green" x:Name="CongratulateLabel" IsVisible="false"/>
+            <Label Text="You still have 3 assignments left" FontSize="20" x:Name="AssignmentsLeft" TextColor="Blue" IsVisible="true"/>-->
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
+

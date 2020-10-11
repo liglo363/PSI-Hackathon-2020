@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.YogaPage">
+
+    <!--<NavigationPage.TitleView>
+        <Label Text="Yoga" TextColor="AntiqueWhite" FontSize="30"/>
+    </NavigationPage.TitleView>-->
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10">
+            <Image Source="https://p.kindpng.com/picc/s/765-7651032_free-download-yoga-stretch-icon-clipart-yoga-stretching.png" HeightRequest="35" WidthRequest="35"/>
+            <Label Text="Yoga" FontSize="30" TextColor="AntiqueWhite" VerticalTextAlignment="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Youtube Channels:" FontSize="25" TextColor="DeepPink"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Click here: " FontSize="20" TextColor="Black"></Span>
+                        <Span Text="Yoga With Adriene" FontSize="20"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://www.youtube.com/user/yogawithadriene" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Click here: " FontSize="20" TextColor="Black"></Span>
+                        <Span Text="Yoga by Candace" FontSize="20"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://www.youtube.com/c/YogabyCandace1/featured" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="Apps:" FontSize="25" TextColor="DeepPink"/>
+            <Label Text="Daily Yoga, Yoga Studio, Asana Rebel, Glo, Gaia" FontSize="20" TextColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+<!--<StackLayout>
+    <Label Text="Youtube Channels:" FontSize="25" TextColor="DeepPink"/>
+    <Label>
+        <Label.FormattedText>
+            <FormattedString>
+                <Span Text="Click here: " FontSize="20" TextColor="Black"></Span>
+                <Span Text="The Honest Guys" FontSize="20"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                    <Span.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://www.youtube.com/c/TheHonestGuys/featured" />
+                    </Span.GestureRecognizers>
+                </Span>
+            </FormattedString>
+        </Label.FormattedText>
+    </Label>
+    
+</StackLayout>-->

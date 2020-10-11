@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.SportPage">
+
+    <NavigationPage.TitleView>
+        <Label Text="Sport" TextColor="AntiqueWhite" FontSize="35"/>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            <Button Text="Practice/Meet Schedule" FontSize="25" BackgroundColor="Orange" Clicked="PracticeMeetSchedule_Button_Clicked"/>
+            <Button Text="Other Notes" FontSize="25" BackgroundColor="Orange"/>
+            <Image Source="https://secureservercdn.net/166.62.108.22/cf3.b27.myftpupload.com/wp-content/uploads/2018/02/BLOG-POST-PICTURE-13.png" HeightRequest="300"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

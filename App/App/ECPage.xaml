@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.ECPage">
+    <NavigationPage.TitleView>
+        <Label Text="Extracurriculars" TextColor="AntiqueWhite" FontSize="35"/>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            <Button Text="Academic Club" BackgroundColor="Orange" FontSize="25" Clicked="Academic_Club_Button_Clicked"/>
+            <Button Text="Sport" BackgroundColor="Orange" FontSize="25" Clicked="Sport_Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

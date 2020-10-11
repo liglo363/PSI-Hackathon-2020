@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.StudyWebsitesMaterialsPage">
+    
+    <NavigationPage.TitleView>
+        <Label Text="SAT/ACT" TextColor="AntiqueWhite" FontSize="35"/>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="   - PrepScholar" TextColor="Blue" FontSize="20"/>
+            <Label Text="   - Khan Academy" TextColor="Blue" FontSize="20"/>
+            <Label Text="   - Magoosh" TextColor="Blue" FontSize="20"/>
+            <Label Text="   - College Board" TextColor="Blue" FontSize="20"/>
+            <Label Text="   - Official ACT Website" TextColor="Blue" FontSize="20"/>
+            <Image Source="https://www.quotemaster.org/images/5f/5f1d8e9000839d46e796b1e1dc80bf8a.jpg" HeightRequest="300"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

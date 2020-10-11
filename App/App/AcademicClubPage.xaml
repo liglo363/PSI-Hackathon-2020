@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.AcademicClubPage">
+
+    <NavigationPage.TitleView>
+        <Label Text="Academic Club" TextColor="AntiqueWhite" FontSize="30"/>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            <Button Text="Meeting Dates" FontSize="25" BackgroundColor="Orange" Clicked="MeetingDates_Button_Clicked"/>
+            <Button Text="Other Notes" FontSize="25" BackgroundColor="Orange"/>
+            <Image Source="https://quotefancy.com/media/wallpaper/3840x2160/2128815-Emily-Dickinson-Quote-The-brain-is-wider-than-the-sky.jpg" HeightRequest="300"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

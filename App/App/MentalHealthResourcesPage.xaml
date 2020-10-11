@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.MentalHealthResourcesPage">
+
+    <NavigationPage.TitleView>
+        <Label Text="Mental Health Resources" TextColor="AntiqueWhite" FontSize="30"/>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout Margin="20,35,20,20">
+            <Button Text="Yoga" BackgroundColor="Pink" FontSize="25" Clicked="Yoga_Button_Clicked"/>
+            <Button Text="Meditation" BackgroundColor="Pink" FontSize="25" Clicked="Meditation_Button_Clicked"/>
+            <Button Text="Study Break Ideas" BackgroundColor="Pink" FontSize="25" Clicked="Study_Break_Ideas_Button_Clicked"/>
+            <Image Source = "https://girlterest.com/wp-content/uploads/2019/07/priority-mental-health-quote.jpg" HeightRequest="300"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

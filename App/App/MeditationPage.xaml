@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.MeditationPage">
+    
+    <!--<NavigationPage.TitleView>
+        <Label Text="Meditation" TextColor="AntiqueWhite" FontSize="30"/>
+    </NavigationPage.TitleView>-->
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10">
+            <Image Source="https://cdn2.iconfinder.com/data/icons/medicine-pt-10/100/119_-_lotus_flower_yoga_meditation_lily-512.png" HeightRequest="35" WidthRequest="35"/>
+            <Label Text="Meditation" FontSize="30" TextColor="AntiqueWhite" VerticalTextAlignment="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Youtube Channels:" FontSize="25" TextColor="DeepPink"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Click here: " FontSize="20" TextColor="Black"></Span>
+                        <Span Text="The Honest Guys" FontSize="20"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://www.youtube.com/c/TheHonestGuys/featured" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Click here: " FontSize="20" TextColor="Black"></Span>
+                        <Span Text="Meditative Mind" FontSize="20"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://www.youtube.com/c/TheMeditativeMind/featured" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="Apps:" FontSize="25" TextColor="DeepPink"/>
+            <Label Text="Headspace, Calm, Insight Timer, Aura, Sattva" FontSize="20" TextColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
